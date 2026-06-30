@@ -13,11 +13,11 @@
         <div class="header-container">
 
             <div class="logo">
-                <img width="60px" height="60px" class="logo-image" src="images/code.png" alt="Code Start Logo">
-                <h3 class="logo-title">Code Start</h3>
+                <img class="logo-image image-size" src="images/code.png" alt="Code Start Logo">
+                <h2 class="logo-title">Code Start</h2>
             </div>
 
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Main navigation">
                 <a class="nav-link" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#services">Services</a>
@@ -25,7 +25,9 @@
             </nav>
 
             <div class="header-actions">
-                <a class="primary-button">Start Learning</a>
+                <a target="_blank" href="https://roadmap.sh/frontend?utm_source=chatgpt.com" class="primary-button" rel="noopener noreferrer">
+                    Start Learning
+                </a>
             </div>
 
         </div>
@@ -43,13 +45,19 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <button class="primary-button">Start Learning</button>
-                    <button class="secondary-button">Explore Courses</button>
+                    <a target="_blank" href="https://www.freecodecamp.org/learn" class="primary-button"
+                        rel="noopener noreferrer">
+                        Start Learning
+                    </a>
+
+                    <a href="#services" class="secondary-button">
+                        Explore Courses
+                    </a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <img width="300px" height="300px" class="hero-img" src="images/com.jpg" alt="Programming Illustration">
+                <img class="hero-img" src="images/com.jpg" alt="Developer writing code on a computer">
             </div>
 
 
@@ -77,8 +85,7 @@
                 </div>
 
                 <div class="about-image">
-                    <img width="300px" height="300px" class="about-img" src="images/computer.webp"
-                        alt="About Code Start">
+                    <img class="about-img" src="images/computer.webp" alt="Students learning programming online">
                 </div>
 
             </div>
@@ -97,120 +104,136 @@
 
             <div class="services-cards">
 
-                <div class="service-card">
-                    <img width="60px" height="60px" src="images/css.jpg" alt="HTML and CSS">
+                <article class="service-card">
+                    <img class="image-size" src="images/css.jpg" alt="HTML and CSS">
                     <h3>HTML & CSS</h3>
                     <p>
                         Learn how to structure web pages and design beautiful,
                         responsive websites from scratch.
                     </p>
                     <a target="_blank"
-                        href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content">
+                        href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content"
+                        rel="noopener noreferrer">
                         Learn More →
                     </a>
-                </div>
+                </article>
 
-                <div class="service-card">
-                    <img width="60px" height="60px" src="images/javascript.jpg" alt="JavaScript">
+                <article class="service-card">
+                    <img class="image-size" src="images/javascript.jpg" alt="JavaScript">
                     <h3>JavaScript</h3>
                     <p>
                         Add dynamic features and interactive elements
                         to make your websites more powerful.
                     </p>
-                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        rel="noopener noreferrer">
                         Learn More →
                     </a>
-                </div>
+                </article>
 
-                <div class="service-card">
-                    <img width="60px" height="60px" src="images/Projects.jpg" alt="Projects">
+                <article class="service-card">
+                    <img class="image-size" src="images/projects.jpg" alt="Projects">
                     <h3>Real Projects</h3>
                     <p>
                         Build real-world projects to strengthen your coding
                         skills and gain practical experience.
                     </p>
-                    <a target="_blank" href="https://www.freecodecamp.org/learn/">
+                    <a target="_blank" href="https://www.freecodecamp.org/learn/" rel="noopener noreferrer">
                         Learn More →
                     </a>
-                </div>
 
+                </article>
             </div>
 
         </section>
         <section id="contact" class="contact-section">
 
             <div class="contact-form-section">
-                <form class="contact-form" action="">
+                <form class="contact-form">
+                    <label for="name">
+                        Your Name</label>
+                    <input id="name" name="name" class="input-field" type="text" placeholder="Your Name" required>
 
-                    <div class="input-row">
-                        <input class="input-field" type="text" placeholder="Your Name">
-                        <input class="input-field" type="email" placeholder="Your Email">
-                    </div>
+                    <label for="email">Your Email</label>
+                    <input id="email" name="email" class="input-field" type="email" placeholder="Your Email" required>
 
-                    <input class="input-field" type="text" placeholder="Subject">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" class="input-field" type="text" placeholder="Subject">
 
-                    <textarea class="message-box" cols="30" rows="10" placeholder="Your Message"></textarea>
-
-                    <input class="submit-button" type="submit" value="Send Message">
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea id="message" name="message" class="message-box" placeholder="Your Message"
+                        required></textarea> <input class="submit-button" type="submit" value="Send Message">
                 </form>
             </div>
 
             <div class="contact-info-section">
-                <h5 class="contact-info-title">Contact Information</h5>
+                <h2 class="contact-info-title">Contact Information</h2>
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <img width="50px" height="50px" src="images/email.webp" alt="Email">
+                        <img class="image-med" src="images/email.webp" alt="Email icon">
                     </div>
                     <div class="info-details">
-                        <h6>Email</h6>
-                        <p>hello@Code-Start.com</p>
+                        <h3>Email</h3>
+                        <a class="email-phone-code" href="mailto:hello@Code-Start.com">hello@Code-Start.com</a>
                     </div>
                 </div>
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <img width="35px" height="35px" src="images/telephone.png" alt="Phone">
+                        <img class=" image-med" src="images/telephone.png" alt="Phone icon">
                     </div>
                     <div class="info-details">
-                        <h6>Phone</h6>
-                        <p>02393744673</p>
+                        <h3>Phone</h3>
+                        <a class="email-phone-code" href="tel:02393744673">
+                            02393744673
+                        </a>
                     </div>
                 </div>
 
                 <div class="info-card">
                     <div class="info-icon">
-                        <img width="35px" height="35px" src="images/location.avif" alt="Location">
+                        <img class=" image-med" src="images/location.avif" alt="Location icon">
                     </div>
                     <div class="info-details">
-                        <h6>Location</h6>
+                        <h3>Location</h3>
                         <p>Palestine, Hebron</p>
                     </div>
                 </div>
 
                 <div class="social-header">
                     <div class="info-icon">
-                        <img width="50px" height="50px" src="images/follow.png" alt="Follow">
+                        <img class="image-med" src="images/follow.png" alt="Follow us icon">
                     </div>
-                    <h6 class="follow-title">Follow Us</h6>
+                    <h3 class="follow-title">Follow Us</h3>
                     <div class="social-icons">
-                        <img width="20px" height="20px" src="images/inst.jpg" alt="instagram">
-                        <img width="20px" height="20px" src="images/link.jpg" alt="link">
-                        <img width="20px" height="20px" src="images/git.png" alt="git">
-                        <img width="20px" height="20px" src="images/facebook.png" alt="facebook">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+
+                            <img class="image-small" src="images/inst.jpg" alt="Instagram logo">
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+                            <img class="image-small" src="images/link.jpg" alt="LinkedIn logo">
+                        </a>
+                        <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer"><img
+                                class="image-small" src="images/git.png" alt="GitHub logo"></a>
+
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> <img
+                                class="image-small" src="images/facebook.png" alt="Facebook logo"></a>
                     </div>
                 </div>
             </div>
-            </div>
+
         </section>
 
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <h3 class="footer-logo">Code Start</h3>
             <p class="footer-text">© 2026 Code Start. All rights reserved.</p>
         </div>
-    </footer> 
+    </footer>
 </body>
 
 </html>
